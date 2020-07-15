@@ -34,7 +34,9 @@
 
 <script>
 function translatetext(){
-   document.getElementById("result").innerHTML = document.getElementById("text").value;
+   let orig = document.getElementById("text").value;
+   let resul = orig.replace(/r/g, "R");
+   document.getElementById("result").innerHTML = resul;
 }
 </script> 
 
