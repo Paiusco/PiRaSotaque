@@ -35,10 +35,22 @@
 <script>
 function translatetext(){
    let orig = document.getElementById("text").value;
-   let resul = orig.replace(/r/g, "R");
+   let resul = orig.replace(/(?<!(\s|r))r(?!r)/g, "R");
    document.getElementById("result").innerHTML = resul;
 }
 </script> 
 
 </body>
 </html>
+© 2020 GitHub, Inc.
+Terms
+Privacy
+Security
+Status
+Help
+Contact GitHub
+Pricing
+API
+Training
+Blog
+About
