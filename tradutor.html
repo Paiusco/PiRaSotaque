@@ -1,36 +1,104 @@
 <!DOCTYPE html>
-<html>
+<html style="display: table; margin: auto;">
 <head>
-  <title>Bootstrap Example</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+   <title>Bootstrap Example</title>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+   <script
+      src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+   </script>
+   <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js">
+   </script>
+
+<style>
+
+   .img-background {
+      background-image: url(https://m.camarapiracicaba.sp.gov.br/artigos/imagens/t620/42485.jpg);
+      background-color: #cccccc;
+      height: 400px;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: relative;
+   }
+
+   .img-background::before {
+      content: '';
+      position: absolute;
+      top: 0px;
+      right: 0px;
+      bottom: 0px;
+      left: 0px;
+      background: rgba(0, 0, 0, 0.65);
+   }
+
+   .img-text-header {
+      text-align: center;
+      position: relative;
+      color: seashell;
+      word-wrap: break-word;
+      white-space: normal;
+   }
+
+   .img-text-comment {
+      text-align: center;
+      position: relative;
+      color: seashell;
+      width: 800px;
+      word-wrap: break-word;
+      white-space: normal;
+      display: block;
+      font-size: large;
+   }
+
+
+</style>
 </head>
-<body>
-<div class="jumbotron">
-  <h1>TradutoR paRa PiRacicabano</h1>
-  <p>Agora vai</p> 
-</div>
+
+<body style="display: table-cell; vertical-align: middle;">
+   <div class="jumbotron img-background">
+   <div class="container">
+      <h1 class="display-4 img-text-header">TradutoR paRa PiRacicabano</h1>
+      <br>
+      <p class="img-text-comment">Aqui a gente puxa o R mais do que vocês imaginam. Então poR que não deixar isso claRo nos textos também?</p>
+      <br>
+      <br>
+   </div>
+   </div>
 
 
 <h4>Texto original: </h4>
-<textarea id="text" rows=20 cols=100>
+<textarea id="text" rows=8 cols=100>
 </textarea>
 
 <br>
 
-<button type="button" class="btn btn-primary btn-lg"  onclick="translatetext()">Traduzir!</button>
+<button
+   type="button"
+   class="btn btn-primary btn-lg"
+   onclick="translatetext()">
+      Traduzir!
+</button>
 
-<br>
-<br>
+<br><br>
+
 <h4>Texto PiRacicabano: </h4>
-
-<textarea id="result" rows=20 cols=100 readonly>
-
+<textarea id="result" rows=8 cols=100 readonly>
 </textarea>
 
+<br><br>
+
+<ul class="nav justify-content-center">
+   <a class="nav-link"
+      href="https://www.github.com/Paiusco/PiRaSotaque"
+      style="font-size: large;">
+         GitHub - Help the project get better :)
+   </a>
+</ul>
 
 <script>
 function translatetext(){
@@ -38,7 +106,7 @@ function translatetext(){
    let resul = orig.replace(/(?<!(\s|r))r(?!r)/g, "R");
    document.getElementById("result").innerHTML = resul;
 }
-</script> 
+</script>
 
 </body>
 </html>
