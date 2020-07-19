@@ -1,0 +1,25 @@
+{
+  "name": "pirasotaque",
+  "version": "1.0.0",
+  "description": "TradutoR de poRtugues para piRacicabano",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Paiusco/PiRaSotaque.git"
+  },
+  "author": "Andre Paiusco",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Paiusco/PiRaSotaque/issues"
+  },
+  "homepage": "https://github.com/Paiusco/PiRaSotaque#readme",
+  "engines": {
+    "node": "12.18.2"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
